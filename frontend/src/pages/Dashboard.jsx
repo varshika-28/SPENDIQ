@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BottomNav from '../components/BottomNav';
 import { 
   Bell, ScanLine, Sparkles, Smartphone, Plane, Shield, 
   Headphones, Coffee, Home, Flag, BarChart2, User, Plus, ChevronRight, AlertTriangle, ArrowRight
@@ -250,31 +251,7 @@ const Dashboard = () => {
         </div>
       </main>
 
-      {/* Bottom Nav */}
-      <nav style={{ position: 'fixed', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '480px', background: 'rgba(255, 255, 255, 0.9)', backdropFilter: 'blur(10px)', borderTop: '1px solid #eee', padding: '12px 24px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', color: 'var(--primary-accent)' }}>
-          <Home size={22} />
-          <span style={{ fontSize: '0.7rem', fontWeight: 600 }}>Home</span>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', color: 'var(--text-secondary)' }}>
-          <Flag size={22} />
-          <span style={{ fontSize: '0.7rem', fontWeight: 500 }}>Goals</span>
-        </div>
-        
-        {/* Floating Scan Button */}
-        <div style={{ width: 56, height: 56, background: 'var(--primary-accent)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', transform: 'translateY(-20px)', boxShadow: '0 8px 16px rgba(63, 81, 181, 0.3)' }}>
-          <ScanLine size={26} />
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', color: 'var(--text-secondary)' }}>
-          <BarChart2 size={22} />
-          <span style={{ fontSize: '0.7rem', fontWeight: 500 }}>Insights</span>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', color: 'var(--text-secondary)' }}>
-          <User size={22} />
-          <span style={{ fontSize: '0.7rem', fontWeight: 500 }}>Profile</span>
-        </div>
-      </nav>
+      <BottomNav />
     </div>
   );
 };
