@@ -2,8 +2,8 @@
 
 > ### 💡 "See the financial impact — before you spend."
 
-**Team:** Namma Thaan
-**Hackathon:** iQOO Hackathon 2026
+**Team:** Syntax Error 
+**Hackathon:Hack for social cause 
 
 ---
 
